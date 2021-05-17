@@ -2,6 +2,12 @@
 
 @section('title', 'Edit Call')
 
+<style>
+    .max-w-6xl {
+        max-width: 60rem !important;
+    }
+</style>
+
 @section('content')
     <div class="container">
         <h1 class="title">Edit Call</h1>
@@ -25,7 +31,7 @@
                         </select>
                     </div>
                     <div class="form-group mt-lg-4">
-                        <div class="form-floating col-md-5">
+                        <div class="form-floating col-md-7">
                             <input type="number" min="0" class="form-control" placeholder="Duration" name="duration" id="duration" value="{{ $call->duration }}" required></input>
                             <label for="duration">Duration</label>
                         </div>
@@ -47,13 +53,13 @@
                         </select>
                     </div>
                     <div class="form-group mt-lg-4">
-                        <div class="form-floating col-md-5">
+                        <div class="form-floating col-md-7">
                             <input type="number" min="0" max="100" class="form-control" placeholder="External Call Score" name="externalCallScore" id="externalCallScore" value="{{ $call->externalCallScore }}" required></input>
                             <label for="externalCallScore">External Call Score</label>
                         </div>
                     </div>
                     <div class="form-group mt-lg-4">
-                        <div class="form-floating col-md-5">
+                        <div class="form-floating col-md-7">
                             <input class="form-control" placeholder="Date" name="date" id="floatingInput" value="{{ $call->date }}" required data-provide="datepicker">
                             <label for="floatingInput">Date & Time</label>
                         </div>

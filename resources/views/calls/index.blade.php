@@ -11,6 +11,17 @@
 
 @section('title', 'Calls')
 
+<style>
+    .max-w-6xl {
+        max-width: unset !important;
+    }
+    .h-16 {
+        height:3rem !important;
+    }
+    .p-6 {
+        padding: unset !important;
+    }
+</style>
 
 @section('content')
     <a class="nav-item nav-link" href="{{ url('calls/create') }}"><button class="btn btn-primary" form="add_location">Add New Call</button></a>

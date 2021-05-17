@@ -30,3 +30,15 @@ Route::get('calls/{call}/edit', [CallsController::class, 'edit']);
 Route::patch('calls/{call}', [CallsController::class, 'update']);
 Route::delete('calls/{call}', [CallsController::class, 'destroy']);
 Route::get('calls/{call}/delete', [CallsController::class, 'destroy']);
+
+Route::get('run-migrate', function () {
+    /* php artisan migrate */
+    \Artisan::call('migrate');
+    exit("Database migrated successfully");
+});
+
+Route::get('run-migrate-rollback', function () {
+    /* php artisan migrate:rollback */
+    \Artisan::call('migrate:rollback');
+    exit("Database rollback successfully");
+});

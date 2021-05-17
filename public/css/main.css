@@ -6,7 +6,9 @@ body {
 .bg-aquamarine {
     background: aquamarine;
 }
-
+.menu-toggle {
+    position: absolute !important;
+}
 /* Sidebar */
 #sidebar-wrapper{
     z-index:1;
@@ -68,6 +70,6 @@ body {
 }
 
 .min-h-screen {
-    min-height: 91vh !important;
+    min-height: 100vh !important;
 }
 

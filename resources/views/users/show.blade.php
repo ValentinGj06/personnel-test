@@ -2,6 +2,12 @@
 
 @section('title', 'User')
 
+<style>
+    .max-w-6xl {
+        max-width: 50rem !important;
+    }
+</style>
+
 @section('content')
     <div class="row">
         <div class="col-md-6">

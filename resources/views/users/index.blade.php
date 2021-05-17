@@ -10,7 +10,14 @@
 @extends('layouts.layout')
 
 @section('title', 'Users')
-
+<style>
+    .max-w-6xl {
+        max-width: 40rem !important;
+    }
+    .h-16 {
+        height:4rem
+    }
+</style>
 @section('content')
     @if(Session::has('flash_success'))
         <div class="alert alert-block alert-success">

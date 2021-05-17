@@ -11,6 +11,16 @@
 
 @section('title', 'Home')
 
+<style>
+    .max-w-6xl {
+        max-width: 40rem !important;
+        margin-top: 20vh;
+    }
+    .h-16 {
+        height:5rem !important;
+    }
+</style>
+
 @section('content')
     <form id="import-csv-form" method="POST"  action="{{ url('import') }}" accept-charset="utf-8" enctype="multipart/form-data">
         @csrf
